@@ -80,10 +80,10 @@ pub fn probe_query() -> Result<String> {
         append_qname_label("gstatic", &mut query);
         append_qname_label("com", &mut query);
     } else {
-        debug!("probe_query: using dnscheck.grapheneos.org");
+        debug!("probe_query: using dnscheck.diamaneos.de");
         append_qname_label("dnscheck", &mut query);
-        append_qname_label("grapheneos", &mut query);
-        append_qname_label("org", &mut query);
+        append_qname_label("diamaneos", &mut query);
+        append_qname_label("de", &mut query);
     }
 
     let mut end = vec![
