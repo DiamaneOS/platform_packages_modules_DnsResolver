@@ -103,10 +103,10 @@ std::vector<uint8_t> makeDnsQuery() {
         appendQnameLabel("gstatic", query);
         appendQnameLabel("com", query);
     } else {
-        LOG(DEBUG) << "Using dnscheck.grapheneos.org for test DNS query";
+        LOG(DEBUG) << "Using dnscheck.diamaneos.de for test DNS query";
         appendQnameLabel("dnscheck", query);
-        appendQnameLabel("grapheneos", query);
-        appendQnameLabel("org", query);
+        appendQnameLabel("diamaneos", query);
+        appendQnameLabel("de", query);
     }
     auto end = std::vector<uint8_t>{
             0,                  // null terminator of FQDN (root TLD)
